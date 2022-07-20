@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to anitracker</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="py-12 h-screen bg-purple-50">
+      <div
+        class="
+          max-w-md
+          mx-auto
+          bg-white
+          rounded-xl
+          shadow-md
+          overflow-hidden
+          md:max-w-md
+        "
+      >
+        <div class="md:flex">
+          <div class="w-full p-2 py-10">
+            <div class="px-14">
+              <button
+                class="
+                  h-12
+                  bg-purple-700
+                  w-full
+                  text-white text-md
+                  rounded
+                  hover:shadow hover:bg-purple-800
+                "
+                id="login-outer"
+              >
+                <a target="_blank" id="login-button" onclick="login()"
+                  >Login with AniList</a
+                >
+              </button>
+              <input
+                type="text"
+                id="token"
+                class="
+                  hidden
+                  px-3
+                  py-3
+                  placeholder-gray-400
+                  text-gray-600
+                  relative
+                  bg-white bg-white
+                  rounded
+                  text-sm
+                  border border-gray-400
+                  outline-none
+                  focus:outline-none focus:ring
+                  w-full
+                "
+                placeholder="Paste token here..."
+              /><br />
+              <button
+                class="
+                  hidden
+                  block
+                  m-auto
+                  mt-2
+                  h-12
+                  bg-purple-700
+                  w-16
+                  text-white text-md
+                  rounded
+                  hover:shadow hover:bg-purple-800
+                "
+                id="login-send"
+                onclick="send()"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#anime-score {
+  text-transform: lowercase;
+  width: 140px;
+}
+#anime-score::first-letter {
+  text-transform: uppercase;
+}
+
+.anime-season {
+  text-transform: lowercase;
+}
+
+.anime-season::first-letter {
+  text-transform: uppercase;
+}
+
+#login-button {
+  cursor: pointer;
+}
+
+#user-menu {
+  z-index: 10;
+}
+
+.slick-list {
+  min-height: 200px;
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+
+.arrows {
+  width: 100%;
+}
